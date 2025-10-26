@@ -5,11 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card shadow">
-                <div class="card-header text-center fs-4">Login</div>
+                <div class="card-header text-center fs-4">Admin Login</div>
                 <div class="card-body">
-
                     <!-- Login Form -->
-                    <form method="POST" action="{{ route('login.check') }}">
+                    <form method="POST" action="{{ route('admin.login.check') }}">
                         @csrf
 
                         <div class="mb-3">
@@ -30,21 +29,7 @@
 
                         <button type="submit" class="btn btn-primary w-100">Login</button>
                     </form>
-
                     <hr>
-
-                    <!-- Social Login Buttons -->
-                    <a href="{{ url('auth/google') }}" class="btn btn-danger w-100 mb-2">
-                        <i class="bi bi-google"></i> Login with Google
-                    </a>
-                    <a href="{{ url('auth/facebook') }}" class="btn btn-primary w-100">
-                        <i class="bi bi-facebook"></i> Login with Facebook
-                    </a>
-
-                    <div class="mt-3 text-center">
-                        <a href="{{ route('register') }}">Don't have an account? Register</a>
-                    </div>
-
                 </div>
                 @if ($errors->any())
                     <div class="card-footer text-body-secondary">

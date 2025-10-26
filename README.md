@@ -1,3 +1,33 @@
+ ----------installation instructions and explanations of the implemented features----------
+1. import Project form git. link(https://github.com/SubhasAdak987/post.management.git)
+2. composer install.
+. install breeze blade
+. dark mode support (yes)
+. testing framework (Pest)
+3. composer require laravel/socialite.
+4. npm install
+5. run npm (npm run dev)
+6. in project consol run (php artisan migrate --seed)
+7. php artisan serve
+8. run http://localhost:8000/storage
+9. admin panel is(http://localhost:8000/admin)
+    [
+        'User Id'   => 'admin@gmail.com',
+        'Password'  => 'admin1234'
+    ]
+10. Admin Dashboard data comes through the Service Provider
+
+
+
+
+
+
+
+ ----------End----------
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
